@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <style>
+
+            ::-webkit-scrollbar {
+                width: 0px;
+             }
+           
+             body
+             {
+            background-color: #000000b6;
+
+             }
+
+           .wrapper{
+               width: 100%;
+               height: 100vh;
+           }
+           
+           h1{
+            font-family: "Audiowide", sans-serif;
+            color:white;
+               font-size: 38px;
+               text-align: center;
+           }
+           
+           .wrapper .container
+           {
+               width: 100%;
+               height: 100vh;
+           }
+           
+           .container > div {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-size: 2em;
+               color: #ffeead;
+               overflow: hidden;
+               border-radius: 10px;
+           }
+           
+           .container > div > img {
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+               border-radius: 10px;
+               transition: 2s;
+           }
+
+           .container div:hover img
+           {
+            transform: scale(1.2);
+           }
+           
+           .container {
+               display: grid;
+               grid-gap: 5px;
+               grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+               grid-auto-rows: 150px;
+               grid-auto-flow: dense; /* Fill all spaces with fitted images */
+           }
+           
+           .horizontal {
+               grid-column: span 2;
+           }
+           
+           .vertical {
+               grid-row: span 2;
+           }
+           
+           .big {
+               grid-column: span 2;
+               grid-row: span 2;
+           }
+           
+           /* Media Queries */
+           
+           @media screen and (min-width: 1024px){
+               .wrapper{
+                   margin: 0 auto;
+               }
+           }
+               </style>
+    </head>
+  <body>
+ 
+    <div class="wrapper">
+        <h1>Gallery</h1>
+        <div class="container">
+            <div class="vertical"><img  src="galleryimages/1.jpg" alt=""></div>
+            <div class="big"><img  src="galleryimages/2.webp" alt=""></div>
+            <div><img src="galleryimages/3.webp" alt=""></div>
+            <div class="big"><img   src="galleryimages/4.webp" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/5.webp" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/6.webp" alt=""></div>
+            <div><img src="galleryimages/7.webp" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/8.webp" alt=""></div>
+            <div class="vertical"><img src="galleryimages/9.webp" alt=""></div>
+            <div><img src="galleryimages/10.webp" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/11.webp" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/12.webp" alt=""></div>
+            <div><img src="galleryimages/13.webp" alt=""></div>
+            <div class="big"><img   src="galleryimages/14.webp" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/15.webp" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/16.jpg" alt=""></div>
+            <div><img src="galleryimages/17.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/18.jpg" alt=""></div>
+            <div><img src="galleryimages/19.jpg" alt=""></div>
+            <div><img src="galleryimages/20.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/21.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/22.jpg" alt=""></div>
+            <div><img src="galleryimages/23.jpg" alt=""></div>
+            <div class="big"><img   src="galleryimages/24.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/25.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/26.jpg" alt=""></div>
+            <div><img src="galleryimages/27.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/28.jpg" alt=""></div>
+            <div class="vertical"><img src="galleryimages/29.jpg" alt=""></div>
+            <div><img src="galleryimages/30.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/31.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/32.jpg" alt=""></div>
+            <div><img src="galleryimages/33.jpg" alt=""></div>
+            <div class="big"><img   src="galleryimages/34.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/35.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/36.jpg" alt=""></div>
+            <div><img src="galleryimages/37.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/38.jpg" alt=""></div>
+            <div><img src="galleryimages/39.jpg" alt=""></div>
+            <div><img src="galleryimages/40.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/41.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/42.jpg" alt=""></div>
+            <div><img src="galleryimages/43.jpg" alt=""></div>
+            <div class="big"><img   src="galleryimages/44.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/45.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/46.jpg" alt=""></div>
+            <div><img src="galleryimages/47.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/48.jpg" alt=""></div>
+            <div class="vertical"><img src="galleryimages/49.jpg" alt=""></div>
+            <div><img src="galleryimages/50.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/51.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/52.jpg" alt=""></div>
+     
+            <div class="big"><img   src="galleryimages/54.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/55.jpg" alt=""></div>
+            <div class="vertical"><img  src="galleryimages/56.jpg" alt=""></div>
+            <div class="horizontal"><img  src="galleryimages/57.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+    </script>
+  </body>
+</html>
