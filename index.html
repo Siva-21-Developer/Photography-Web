@@ -84,9 +84,10 @@
 </div>
 
       <div class="first-section" id="Home">
-          <h1>
+          <h1 class="heading">
             Mobile <br> <span>Photography</span>
           </h1>
+          
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -117,22 +118,22 @@
       </div>
       <div class="second-section">
             <div class="image-container">
-              <div class="image">
+              <div class="image image1">
                 <img src='images/IMG_0945.JPG' width="400" height="500">
             </div>
-            <div class="image">
+            <div class="image image2">
                 <img src='images/con1.jpg' width="400" height="500">
             </div>
-            <div class="image">
+            <div class="image image3">
                 <img src='images/con2.jpg' width="400" height="500">
             </div>
-            <div class="image">
+            <div class="image image4">
                 <img src='images/con3.jpg' width="400" height="500">
             </div>
-            <div class="image">
+            <div class="image image5">
                 <img src='images/con4.jpg' width="400" height="500">
             </div>
-            <div class="image">
+            <div class="image image6">
               <img src='images/con5.jpg' width="400" height="500">
           </div>
             </div>
@@ -144,22 +145,22 @@
         </div>
         <div class="grid-wrapper">
           <div>
-            <img class="hoverimage" src="images/IMG_20201107_122752.jpg" alt="" />
+            <img class="hoverimage img1" src="images/IMG_20201107_122752.jpg" alt="" />
           </div>
           <div class="tall">
-            <img class="hoverimage" src="images/1632968072928.jpg" alt="" />
+            <img class="hoverimage img2" src="images/1632968072928.jpg" alt="" />
           </div>
           <div class="tall">
-            <img class="hoverimage" src="images/IMG_20201103_071326_706.jpg" alt="">
+            <img class="hoverimage img3" src="images/IMG_20201103_071326_706.jpg" alt="">
           </div>
           <div class="wide">
-            <img class="hoverimage" src="images/IMG_20211029_151345.jpg" alt="" />
+            <img class="hoverimage img4" src="images/IMG_20211029_151345.jpg" alt="" />
           </div>
           <div>
-            <img class="hoverimage" src="images/IMG_20211013_183432_560.jpg" alt="" />
+            <img class="hoverimage img5" src="images/IMG_20211013_183432_560.jpg" alt="" />
           </div>
           <div>
-            <img class="hoverimage" src="images/IMG_20210802_065650_119.jpg" alt="" />
+            <img class="hoverimage img6" src="images/IMG_20210802_065650_119.jpg" alt="" />
           </div>
     </div>
 
@@ -182,7 +183,34 @@
   </div>
 </div>
 
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="javascript/model.js"></script>
+
+<script>
+  ScrollReveal({ 
+    reset: true, 
+    distance:'120px',     
+});
+ScrollReveal().reveal('.heading', {origin:'left'});
+ScrollReveal().reveal('.carousel',{delay:400 , origin: 'right'});
+ScrollReveal().reveal('.image1',{delay:300});
+ScrollReveal().reveal('.image2',{delay:600});
+ScrollReveal().reveal('.image3',{delay:900});
+ScrollReveal().reveal('.image4',{delay:1200});
+ScrollReveal().reveal('.image5',{delay:1500});
+ScrollReveal().reveal('.image6',{delay:1800});
+
+ScrollReveal().reveal('.img1',{delay:300});
+ScrollReveal().reveal('.img2',{delay:600});
+ScrollReveal().reveal('.img3',{delay:900});
+ScrollReveal().reveal('.img4',{delay:1200});
+ScrollReveal().reveal('.img5',{delay:1500});
+ScrollReveal().reveal('.img6',{delay:1800});
+
+ScrollReveal().reveal('.card',{delay:300});
+
+ScrollReveal().reveal('.title', {duration:1000, origin:'left'});
+</script>
 
 </body>
 </html>

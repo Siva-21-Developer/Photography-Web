@@ -13,12 +13,27 @@ body {
 	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background-color: #000000;
     background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-    /* background-size: 400% 400%; */
-	animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
 	height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 80% 100%;
+    }
+    100% 
+    {
+        background-position: 0% 50%;
+    }
+}
+
 
 
 .navbar
@@ -64,6 +79,7 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .carousel
@@ -104,13 +120,13 @@ body {
     font-weight: 400;
     font-size: 100px;
     color: white;
-    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.701);
 }
 
 
 .first-section h1 span
 {
-    color: rgb(23, 23, 23);
+   
+    color: tomato;
 }
 
 
@@ -119,8 +135,6 @@ body {
     height: 100vh;
     width: 100%;
 }
-
-
 
 .second-section
 {
@@ -293,10 +307,10 @@ body {
 
 @keyframes textShine {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 70%;
     }
     100% {
-        background-position: 100% 50%;
+        background-position: 100% 70%;
     }
 }
 
