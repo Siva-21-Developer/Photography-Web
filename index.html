@@ -27,6 +27,7 @@
     justify-content: center;
   }
   .navbar{
+    top: 20px;
     width:90%;
     position: fixed;
     top: -500px;
@@ -85,7 +86,10 @@
 
       <div class="first-section" id="Home">
           <h1 class="heading">
-            Mobile <br> <span>Photography</span>
+            Mobile <br> <span>Photography</span> <br>
+            <span>Siva</span>
+            <br>
+            <span class="content" style="color:whitesmoke;">Photography is my definition of love..</span>
           </h1>
           
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -115,8 +119,8 @@
               </div>
             </div>
           </div>
-      </div>
-      <div class="second-section">
+    </div>
+    <div class="second-section">
             <div class="image-container">
               <div class="image image1">
                 <img src='images/IMG_0945.JPG' width="400" height="500">
@@ -166,6 +170,22 @@
 
     </div>
 
+
+      <section class="video-section">
+        <div class="video-con">
+          <video src="video/vid1.mp4" class="vid" muted></video>
+        </div>
+        <div class="video-con">
+          <video src="video/vid2.mp4" class="vid" muted></video>
+        </div>
+        <div class="video-con">
+          <video src="video/vid3.mp4" class="vid" muted></video>
+        </div>
+        <div class="video-con">
+          <video src="video/vid4.mp4" class="vid" muted></video>
+        </div>
+       </section>
+  
 <div class="container" id="About">
   <div class="card">
     <img src="images/2.jpeg" alt="Icon" srcset="">
@@ -201,15 +221,33 @@ ScrollReveal().reveal('.image5',{delay:1500});
 ScrollReveal().reveal('.image6',{delay:1800});
 
 ScrollReveal().reveal('.img1',{delay:300});
-ScrollReveal().reveal('.img2',{delay:600});
-ScrollReveal().reveal('.img3',{delay:900});
-ScrollReveal().reveal('.img4',{delay:1200});
-ScrollReveal().reveal('.img5',{delay:1500});
-ScrollReveal().reveal('.img6',{delay:1800});
+ScrollReveal().reveal('.img2',{delay:300});
+ScrollReveal().reveal('.img3',{delay:300});
+ScrollReveal().reveal('.img4',{delay:300});
+ScrollReveal().reveal('.img5',{delay:300});
+ScrollReveal().reveal('.img6',{delay:300});
+
+ScrollReveal().reveal('.vid',{delay:300});
 
 ScrollReveal().reveal('.card',{delay:300});
 
 ScrollReveal().reveal('.title', {duration:1000, origin:'left'});
+
+var vid = document.getElementsByTagName("video");
+[].forEach.call(vid, function (item) {
+    item.addEventListener('mouseover', hoverVideo, false);
+    item.addEventListener('mouseout', hideVideo, false);
+});
+
+function hoverVideo(e)
+{   
+    this.play();
+}
+function hideVideo(e)
+{
+    this.pause();
+}
+
 </script>
 
 </body>
