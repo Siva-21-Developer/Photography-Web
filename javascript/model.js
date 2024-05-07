@@ -1,12 +1,12 @@
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "20px";
-    } else {
-      document.getElementById("navbar").style.top = "-500px";
-    }
-}
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("navbar").style.top = "20px";
+//     } else {
+//       document.getElementById("navbar").style.top = "-500px";
+//     }
+// }
 
 
 document.addEventListener('contextmenu', (e) => e.preventDefault());
@@ -25,3 +25,11 @@ document.onkeydown = (e) => {
   )
     return false;
 };
+
+
+function PageLoad()
+{
+  window.alert('Leave Site?');
+}
+
+

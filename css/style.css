@@ -51,6 +51,7 @@ body {
 
 .navbar .navbar-brand
 {
+    color: tomato;
     font-family: "Dancing Script", cursive;
     font-size: 30px;
     padding-left: 20px;
@@ -74,44 +75,21 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
     overflow: hidden;
 }
 
-.carousel
+.first-section h1 
 {
-    width: 600px;
-    height: 500px;
-    border-radius: 10px;
-    border-radius: 45% 55% 56% 44% / 43% 50% 50% 57%;   
-    overflow: hidden;
+    position: absolute;
+    left: 80px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    color: white;
 }
 
-.carousel .carousel-indicators
-{
-    bottom: 0px;
-}
-
-.carousel .carousel-caption
-{
-    bottom: 20px;
-}
-
-.carousel .carousel-item
-{
-    height: 500px;
-    overflow: hidden;
-}
-
-.carousel .carousel-item img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.first-section h1 , h5
+h5
 {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
@@ -152,7 +130,7 @@ body {
 .image-container
 {
     position: relative;
-    min-height:50%;
+    min-height:80%;
     width: 80%;
     overflow: hidden;
     display: flex;
@@ -160,8 +138,6 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     border-radius: 20px;
-    background:rgba(255, 255, 255, 0.1);
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -174,10 +150,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100px;
+    height: 80%;
     overflow: hidden;
     border-radius: 20px;
     margin: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     transition: 0.4s ease;
@@ -185,7 +161,7 @@ body {
 
 .image:hover
 {
-    width: 300px;
+    width: 320px;
 }
 
 .image::after
@@ -210,10 +186,10 @@ body {
 {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     overflow: hidden;
 }
@@ -221,8 +197,8 @@ body {
 .third-section .title
 {
     position: relative;
-    width: 30%;
-    height: 50vh;
+    width: 100%;
+    height: 22vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,7 +233,8 @@ body {
 
 .third-section .grid-wrapper
 {
-    height: 100%;
+    height: 80vh;
+    width: 80%;
     padding: 20px;
 }
 
@@ -393,11 +370,6 @@ border: 1px solid rgba(255, 255, 255, 0.71);
 @media (max-width:1300px) 
 {
 
-    .first-section
-    {
-        height: 150vh;
-    }
-
     .third-section
     {
         height: 130vh;
@@ -406,7 +378,7 @@ border: 1px solid rgba(255, 255, 255, 0.71);
     .third-section .title
     {
         width: 100%;
-        height: 200px;
+        height: 25vh;
         display: flex;
         align-items: start;
     }
@@ -416,8 +388,29 @@ border: 1px solid rgba(255, 255, 255, 0.71);
         font-size: 50px;
     }
 
+    .third-section .grid-wrapper
+    {
+        width: 100%;
+        height: 100vh;
+    }
+
 }
 
+
+@media screen and (max-width:1080px) 
+{
+    .third-section
+    {
+        display: block;
+        height: 150vh;
+    }
+
+    .video-section
+    {
+        height: 115vh;
+    }
+    
+}
 
 @media (max-width:993px) 
 {
@@ -429,38 +422,40 @@ border: 1px solid rgba(255, 255, 255, 0.71);
     }    
 }
 
-@media screen and (max-width:830px) 
+@media screen and (max-width:810px) 
 {
     .third-section
     {
-        height: 180vh;
+        height: 200vh;
     }    
+
+    .third-section .title
+    {
+        height: 25vh;
+    }
+
+    .third-section .grid-wrapper
+    {
+        height: 180vh;
+        width: 100%;
+        overflow: hidden;
+    }
 }
 
 
 @media (max-width:750px) 
 {
-    .carousel
-    {
-        width: 350px;
-        height: 350px;
-    }
-
-    .carousel .carousel-item
-    {
-        height: 350px;
-    }        
     
 .first-section h1 , h5
 {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .second-section
     {
-        height: 140vh;
+        height: 160vh;
         padding: 20px;
     }
 
@@ -492,19 +487,19 @@ border: 1px solid rgba(255, 255, 255, 0.71);
 {
     .third-section
     {
-        height: 145vh;
+        height: 100vh;
     }   
 
     .third-section .title
     {
         left: 10px;
-        height: 230px;
     }
 
     .third-section .title h1
     {
         font-size: 40px;
     }
+
 
     .grid-wrapper {
         display: grid;
@@ -527,45 +522,69 @@ border: 1px solid rgba(255, 255, 255, 0.71);
         height: 350px;
     }
 
+    .video-section
+    {
+        height: 100vh;
+    }
+
     .video-section .video-con
     {
-        height: 200px;
-        width: 200px;
+        height: 250px;
+        width: 150px;
     }
 
 
 }
 
+@media screen and (max-width:450px) 
+{
+    .first-section h1
+    {
+        font-size: 40px;
+    }
+}
+
 
 @media (max-width:400px) 
 {
-    .first-section  
+    .first-section h1
     {
-        height: 90vh;
+        left: 10px;
     }
-
     .third-section{
         height: 100vh;
     }
 
     .video-section
     {
-        height: 150vh;
+        height: 100vh;
         gap: 10px;
     }    
 }
 
+@media screen and (max-width:360px) 
+{
+    .third-section
+    {
+        height: 140vh;
+    }    
+
+  
+}
 
 @media screen and (max-width:350px)
 {
     
     .third-section{
-        height: 150vh;
+        height: 170vh;
     }
 
-    .third-section .title h1
+    .third-section .title 
     {
-        font-size: 30px;
+        font-size: 25px;
         left: 0;
+        padding: 0;
+        margin-right: -10px;
+        height: 30vh;
     }
 }

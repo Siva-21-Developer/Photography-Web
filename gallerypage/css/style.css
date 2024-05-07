@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	font-family: 'Karla', sans-serif;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar
+{
+	width: 0;
+}
+
+#buttons{
+	text-align: center;
+	margin: 20px 0;
+}
+
+button {
+	background-color: #efefef6b;
+	border: 1px solid #ccc;
+	padding: 3px 10px 4px 10px;
+	margin: 0 1px;
+	border-radius: 4px;
+	color: #000000;
+	font-family: 'Karla', sans-serif;
+	font-size: 100%;
+	text-transform: capitalize;
+}
+
+button:hover, button.active {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;}
+
+#gallery {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+
+#gallery img {
+	width: 300px;
+	height: 450px;
+	border-radius: 3px;
+	margin: 6px;
+    /* box-shadow: 0 0 3px 3px #ebebeb; */
+	float: left;
+}
